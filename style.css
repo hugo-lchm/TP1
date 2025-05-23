@@ -1,0 +1,119 @@
+/* Reset basique */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    background: #f8f9fa; /* léger gris clair */
+    color: #333;
+}
+
+/* Container centré verticalement et horizontalement */
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+/* Carte blanche avec ombre */
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Titre de la carte */
+.card-title {
+    font-weight: 700;
+    color: #007bff; /* bleu bootstrap */
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+/* Form labels */
+.form-label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+    color: #444;
+}
+
+/* Champs input */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1.5px solid #ced4da;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 6px rgba(0,123,255,0.3);
+}
+
+/* Bouton de connexion */
+button.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-weight: 700;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Message d'erreur */
+.alert-danger {
+    background-color: #f8d7da;
+    color: #842029;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #f5c2c7;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Liens sous le formulaire */
+.text-center a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 10px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.text-center a:hover {
+    color: #0056b3;
+}
+
+/* Responsive : moins large sur petits écrans */
+@media (max-width: 480px) {
+    .card {
+        padding: 20px;
+        width: 90%;
+    }
+}
